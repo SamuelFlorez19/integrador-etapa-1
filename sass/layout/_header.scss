@@ -2,45 +2,79 @@
 /* HEADER */
 /* -------------------------------------------------------- */
 
-.main-header{
-    background-color: yellowgreen;
-    
 
+.header {
+    background-color: $color-secundario;
+    display: flex;
+    justify-content: space-around;
+
+    &__logo {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    &__logo-link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: $color-primario;
+    font-weight: 700;
+    text-transform: uppercase;
+    }
+    &__nav {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+    }
+    &__nav-item {
+        margin: 0 0.5rem;
+        
+        &:last-child { // Seleccionamos el último elemento de la lista
+
+            & > a { // Seleccionamos el enlace dentro del último elemento
+        
+                background-color: $color-primario;
+        
+                color: #fff;
+        
+                padding: 0.5rem 1rem;
+        
+                border-radius: 1rem;
+        
+                text-decoration: none;
+        
+                transition: background-color 0.2s ease-in-out;
+        
+        
+            &:hover {
+        
+                background-color: darken($color-primario, 10%);
+        
+            }
+        
+            }
+        
+        }
+    }
+    &__nav-link {
+        text-decoration: none;
+        color: $color-primario;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-right: 1.5rem;
+        transition: color 0.1s ease-in-out;
+        &:hover {
+
+            color: darken($color-primario, 20%);
+        
+        }
+    }
+    &__nav-list {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+    }
 }
 
-#menu {
-    display: none;
-}
 
-/* -------------------------------------------------------- */
-/* NAVBAR */
-/* -------------------------------------------------------- */
-
-.nav-bar{
-    background-color: mediumaquamarine;
-
-    
-}
-
-/* -------------------------------------------------------- */
-/* SEARCH BAR */
-/* -------------------------------------------------------- */
-
-.search-bar{
-    background-color: olivedrab;
-    
-
-    
-    
-
-}
-
-
-
-/* -------------------------------------------------------- */
-/* MENÚ TOOGLE */
-/* -------------------------------------------------------- */
-
-.menu-toogle {
-    display: none;
-}
