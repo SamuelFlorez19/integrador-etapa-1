@@ -6,46 +6,66 @@
     <title>Crown Jewels</title>
   </head>
   <body>
-    
-    <header class="header">
-      <div class="header__logo">
-        <a class="header__logo-link" href="#">
-          Crown Jewels
-        </a>
-      </div>
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Inicio</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Alta</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Nosotros</a>
-          </li>
-          <li class="header__nav-item">
-            <a class="header__nav-link" href="#">Contactanos</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
 
-    <main class="container">
-      <div class="main-search">
-        <p>Brillo único, estilo tuyo</p>
-        <input type="text" class="main-search__input" placeholder="Buscar prenda">
-        <button class="main-search__button">Buscar</button>
-      </div>
+    <div class="container">
+
+      <header class="header"> <!-- ? HEADER -->
+        <div class="header__container-logo">
+          <h1 class="header__logo">
+            <a class="header__logo-link" href="/">
+              Crown Jewels
+            </a>
+          </h1>
+        </div>
+        <div class="header__container-navbar">
+          <nav class="header__nav">
+            <i class="fa-solid fa-bars"></i>
+            <ul class="header__nav-list">
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Inicio</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="#">Alta</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="/nosotros.html">Nosotros</a>
+              </li>
+              <li class="header__nav-item">
+                <a class="header__nav-link" href="/contacto.html">Contactanos</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header> <!--? .header -->
+      
+      <main class="main-container">
+        <div class="main-search"> <!--? Banner -->
+          <p>Brillo único, estilo tuyo</p>
+          <form class="main-search__search-form">
+            <input type="text" class="main-search__input" placeholder="Buscar prenda...">
+            <button class="main-search__button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div> <!-- ? Banner -->
+      </main>
+
+    </div> <!--  ? .container -->
+
+
+
 
       
 
 
 
-    </main>
 
       
 
     <script type="module" src="/main.js"></script>
+    <script>
+      src="https://kit.fontawesome.com815581fb069.js"
+      crossOrigin="anonymous"
+    </script>
   </body>
 </html>
